@@ -1,0 +1,4 @@
+baseURL = "https://imochoa.github.io/"
+languageCode = "en-us"
+title = "IMO's IMO"
+theme = "beautifulhugo"
