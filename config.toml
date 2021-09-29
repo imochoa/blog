@@ -1,4 +1,175 @@
-baseURL = "https://imochoa.github.io/"
-languageCode = "en-us"
-title = "IMO's IMO"
+# Resources on: 
+# https://github.com/halogenica/beautifulhugo
+
+# baseurl = "https://imochoa.github.io"
+baseurl = "https://imochoa.com"
+DefaultContentLanguage = "en"
+#DefaultContentLanguage = "ja"
+title = "IMO's Blog"
 theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsStyle = "trac"
+
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
+
+[Params]
+  # homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
+  homeTitle = "IMO's IMO" # Set a different text for the header on the home page
+  subtitle = "(I.M.Ochoa's \"In My Opinion\")"
+
+  # mainSections = ["post","posts"]
+  mainSections = ["post","posts"]
+
+  # logo = "img/logo.png" # Expecting square dimensions
+  logo = "img/logo/logo-margins.svg" # Expecting square dimensions
+  # favicon = "img/favicon.ico"
+  favicon = "img/logo/favicon.ico"
+
+  dateFormat = "January 2, 2006"
+
+  # commit = false
+  commit = false
+
+  # rss = true
+  rss = false
+
+  comments = true
+  readingTime = true
+
+  # wordCount = true
+  wordCount = false
+
+  useHLJS = true
+  socialShare = true
+  delayDisqus = true
+  showRelatedPosts = true
+#  hideAuthor = true
+#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+
+[languages]
+  [languages.en] 
+    contentDir = "content/en" # English
+  # [languages.es]
+  #   contentDir = "content/es" # Spanish
+
+#[[Params.bigimg]]
+#  src = "img/triangle.jpg"
+#  desc = "Triangle"
+#[[Params.bigimg]]
+#  src = "img/sphere.jpg"
+#  desc = "Sphere"
+#  # position: see values of CSS background-position.
+#  position = "center top"
+#[[Params.bigimg]]
+#  src = "img/hexagon.jpg"
+#  desc = "Hexagon"
+
+[Author]
+  name = "IMOchoa"
+  # website = "https://imochoa.github.io"
+  website = "https://imochoa.com"
+
+  email = "me@imochoa.com"
+  github = "imochoa"
+  linkedin = "imochoa"
+  paypal = "imochoa"
+  stackoverflow = "users/11603367/imochoa"
+  # facebook = "username"
+  # gitlab = "username"
+  # bitbucket = "username"
+  # twitter = "username"
+  # reddit = "username"
+  # xing = "username"
+  # snapchat = "username"
+  # instagram = "username"
+  # youtube = "user/username" # or channel/channelname
+  # soundcloud = "username"
+  # spotify = "username"
+  # bandcamp = "username"
+  # itchio = "username"
+  # vk = "username"
+  # telegram = "username"
+  # 500px = "username"
+  # codepen = "username"
+  # mastodon = "url"
+  # kaggle = "username"
+  # weibo = "username"
+  # slack = "username"
+
+[[menu.main]]
+    name = "Blog"
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 3
+
+# [[menu.main]]
+#     identifier = "samples"
+#     name = "Samples"
+#     weight = 2
+# 
+# [[menu.main]]
+#     parent = "samples"
+#     name = "Big Image Sample"
+#     url = "post/2017-03-07-bigimg-sample"
+#     weight = 1
+# 
+# [[menu.main]]
+#     parent = "samples"
+#     name = "Math Sample"
+#     url = "post/2017-03-05-math-sample"
+#     weight = 2
+# 
+# [[menu.main]]
+#     parent = "samples"
+#     name = "Code Sample"
+#     url = "post/2016-03-08-code-sample"
+#     weight = 3
+
+[[menu.main]]
+    name = "Tags"
+    url = "tags"
+    weight = 3
+
+
+# Hugo and GDPR
+# https://gohugo.io/about/hugo-and-gdpr/
+
+[privacy]
+[privacy.disqus]
+disable = true
+
+[privacy.googleAnalytics]
+disable = true
+
+[privacy.instagram]
+disable = true
+
+[privacy.twitter]
+disable = true
+
+[privacy.vimeo]
+disable = true
+
+[privacy.youtube]
+disable = true
+
+
+[services]
+[services.instagram]
+disableInlineCSS = true
+
+[services.twitter]
+disableInlineCSS = true
+
+ 
+ 
