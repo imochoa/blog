@@ -19,7 +19,10 @@ LOGO_IMG_DIR := ${STATIC_DIR}/img/logo
 
 .PHONY: clean-public
 clean-public:
-	sudo rm -rf "${PUBLIC_DIR}/"*
+	echo "cleaning!" \
+	&& cd ${PUBLIC_DIR} \
+	&& sudo find . -type f \! \( -name ".git*" -o -name "CNAME" \) -delete \
+	&& sudo find . -type d \! \( -name ".git*"  \) -delete
 
 
 .PHONY: chown-public
@@ -52,27 +55,6 @@ hugo-server: clean-public
 		${IMGNAME}                  \
 		hugo server --source="/src" --bind="0.0.0.0"
 
-
-.PHONY: build-img
-build-img:
-	docker build                               \
-		-f ${PROVISION_DIR}/Dockerfile   \
-		--build-arg CODE_DIR=${DOCKER_CODE_DIR} \
-		-t ${IMGNAME}:${COMMIT_HASH}          \
-		${REPO_DIR}
-
-.PHONY: list-imgs
-list-imgs:
-	docker images ${IMGNAME}
-
-.PHONY: clean-curr-img
-clean-curr-img:
-	docker image rm ${IMGNAME}:${COMMIT_HASH}
-
-.PHONY: clean-imgs
-clean-imgs:
-	docker images ${IMGNAME} --format "{{.Tag}}" | xargs -I{} docker image rm ${IMGNAME}:{}
-
 .PHONY: help
 help:
 	cat Makefile
@@ -90,3 +72,9 @@ render-pngs:
           \( -clone 0 -resize 64x64 -extent 64x64 \) \
           -delete 0 -alpha off -colors 256 ${LOGO_IMG_DIR}/favicon.ico
 
+
+publish: hugo chown-public
+	cd ${PUBLIC_DIR} \
+	&& git add . \
+	&& git commit -m "updated static site [${DATE}]" \
+	&& git push

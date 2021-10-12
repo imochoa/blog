@@ -60,19 +60,3 @@ The issue here is that both equations are actually the same equation with differ
 so the subsitution backfires because it does not add any new information.
 
 In other words, because the equations are _linearly dependent_.
-
-## 0=0 is always there
-
-If you think about it, whenever you have any equality like:
-
-$$ f(x,y,z,a,b,c,u,v,w) = \text{another crazy thing} $$
-
-You know that they're equal so if you subtract either one from both sides,
-you're going to end up with a big fat $0=0$
-
-It's the same as adding $+1$ to either side and saying that they're still equal,
-with the slight difference that:
-
-$$f(x,y,z,a,b,c,u,v,w) +1 = \text{another crazy thing}+1 $$
-
-is still a mystery whereas $0=0$ is "technically solved"
