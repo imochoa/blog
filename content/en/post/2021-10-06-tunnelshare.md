@@ -28,6 +28,18 @@ But that listing is kind of boring so let's upgrade to using [express](https://e
 
 # Docker Compose to the rescue
 
+We can automate the setup by using a docker-compose YAML file and feed in the user, password and directory we would like to share:
+
+
+{{< highlight shell "linenos=table" >}}
+DIR2SHARE='/tmp/share' \
+U='username' \
+P='secret' \
+docker-compose --file share-compose-nodejs.yaml up
+{{</ highlight >}}
+
+And here is that `share-compose-nodejs.yaml` file:
+
 {{< highlight yaml "linenos=table" >}}
 version: "3.9"
 services:
@@ -52,27 +64,12 @@ services:
       --local-host webserver --port 8000
 {{</ highlight >}}
 
-So what's going on here?
+### Now there's a simple login screen
 
-- L1
-- L2 
-- L3
-
-So how do you run it?
-
-{{< highlight shell "linenos=table" >}}
-DIR2SHARE='/tmp/share' \
-U='username' \
-P='secret' \
-docker-compose --file share-compose-nodejs.yaml up
-{{</ highlight >}}
-
-## Here's how that looks now
-
-### The simple login screen
 
 ![Login Prompt](/img/post/tunnelshare/login.png)
 
-### The updated directory listing
+### And the directory listing looks a bit nicer
+
 
 ![NodeJS share](/img/post/tunnelshare/nodeshare.png)
