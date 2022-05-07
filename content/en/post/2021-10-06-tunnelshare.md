@@ -4,7 +4,7 @@ subtitle: A worse, albeit cooler, way to share files
 date: 2021-10-06T18:00:00+02:00
 tags: ['docker']
 bigimg: [{ src: '/img/backgrounds/bobby-johnson-406717.jpg' }]
-draft: false
+draft: true
 ---
 
 # Plumbing pipes

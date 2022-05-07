@@ -4,7 +4,7 @@ subtitle: Getting trolled by math
 date: 2021-09-28T9:00:33+02:00
 tags: ['basic math']
 bigimg: [{ src: '/img/backgrounds/laura-skinner-348001.jpg' }]
-draft: false
+draft: true
 ---
 
 <!-- https://katex.org/docs/supported.html !-->
