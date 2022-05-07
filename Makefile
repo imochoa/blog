@@ -1,4 +1,5 @@
-IMGNAME := jojomi/hugo:0.85.0
+# IMGNAME := jojomi/hugo:0.85.0
+IMGNAME := jojomi/hugo:latest
 
 # Auto variables
 DATE := $(shell date)
