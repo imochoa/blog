@@ -3,7 +3,7 @@ title: Setting up Garmin Podcasts on Linux
 subtitle: Initial exploration
 date: 2022-05-07T18:00:00+02:00
 tags: ['Garmin', 'Music', 'ffmpeg']
-bigimg: [{ src: '/img/backgrounds/jack-cairney-223226.jpg' }]
+bigimg: [{ src: '/img/backgrounds/jack-cairney-223226.jpg', desc: "Jack Cairney" }]
 draft: false
 ---
 

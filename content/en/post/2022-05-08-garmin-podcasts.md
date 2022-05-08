@@ -3,7 +3,7 @@ title: Setting up Garmin Podcasts on Linux
 subtitle: Much easier approach
 date: 2022-05-08T18:00:00+02:00
 tags: ['Garmin', 'Music' ]
-bigimg: [{ src: '/img/backgrounds/aman-dhakal-205796.jpg' }]
+bigimg: [{ src: '/img/backgrounds/aman-dhakal-205796.jpg', desc: "Aman Dhakal" }]
 draft: false
 ---
 
