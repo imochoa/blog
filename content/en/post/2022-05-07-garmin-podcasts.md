@@ -7,6 +7,9 @@ bigimg: [{ src: '/img/backgrounds/jack-cairney-223226.jpg' }]
 draft: false
 ---
 
+# [Click here to see V2.0]( {{< relref "post/2022-05-08-garmin-podcasts.md" >}}) 
+
+
 # The problem
 
 I like to go on long runs, and sometimes I use that as an opportunity to catch up on my favorite podcasts.
